@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/starter-code/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" sizes="32x32" href="/images/techover.ico" />
+
+    <title>Lösenords Generator</title>
+  </head>
+  <body>
+    <div class="card-container">
+      <!--Card-->
+      <div class="pwd-card">
+        <h3>Password Generator</h3>
+        <!--card section-->
+        <form class="p-form" id="passwordForm">
+          <div class="generated-pwd-container">
+            <div class="text-icon">
+              <span id="generated-pwd">uvt1k5v3b28o87a</span>
+              <img class="copy-icon" id="imgToCopy" src="/images/copy-icon.svg" alt="" onclick="copyPassword()">
+            </div>
+          </div>
+        </form>
+        <!-- second card section / settings -->
+        <section class="pwd-settings-container">
+          <section class="character-container">
+            <h4>Character length</h4>
+            <h2 class="characters-lenght" id="total-characters">15</h2>
+          </section>
+          <!--slider lenght-->
+            <div class="range">
+              <input class="slider" id="range" type="range" value="50" oninput="progressScript()"/>
+              <div class="value"></div>
+            </div>
+              <!--checkboxes-->
+          <div class="checkbox-container">
+            <label class="container">Include Uppercase Letters
+              <input id="uppercase" type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">Include Lowercase Letters
+              <input id="lowercase" type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">Include Numbers
+              <input id="numbers" type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">Include symbols
+              <input id="symbols" type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+          </div>  
+          <div>
+            <div class="strength-level-container">
+              <h3 class="strength-text">Strength</h3>
+              <span class="level-text" id="level-text">Strong</span>
+              <div class="staples-container">
+                <div class="staples" id="Sone"></div>
+                <div class="staples" id="Stwo"></div>
+                <div class="staples" id="Sthree"></div>
+                <div class="staples" id="Sfour"></div>
+              </div>
+            </div>
+          </div>
+          <button >Generate</button>
+        </section>
+        <img class="techover-icon" src="../images/techover-logo.png" alt="">
+      </div>
+    </div>
+    <script src="/starter-code/index.js"></script>
+  </body>
+</html>
