@@ -1,0 +1,14 @@
+{
+  "name": "passwordgeneratorn",
+  "version": "1.0.0",
+  "description": "![Se hur designen ska se ut via](./preview.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
